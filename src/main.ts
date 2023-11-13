@@ -19,7 +19,7 @@ new RegisterUserController(app, registerUser).handle();
 new ListUsersController(app, listUsers).handle();
 new GetUserController(app, getUser).handle();
 
-app.get('/', () => 'Hello world').listen(3001);
+app.get('/', () => 'Hello world').listen(3000);
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
